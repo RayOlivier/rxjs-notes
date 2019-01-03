@@ -1,0 +1,4 @@
+//the following notes are from watching the Netflix RxJS+Redux+React talk
+
+Observables are an alternative to promises
+    >advantages:  stream of zero, one, or more values (promises are always 1); over any amount of time; CANCELLABLE;
