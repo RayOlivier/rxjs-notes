@@ -1,4 +1,23 @@
-//the following notes are from watching the Netflix RxJS+Redux+React talk
+//////the following notes are from watching the Netflix RxJS+Redux+React talk///////
+//general notes about terms I didn't know
+(AJAX = Asynchronous JavaScript And XML, unrelated but didn't know this lol)
+(debounce = "The debounce function delays the processing of the keyup event until the user has stopped typing for a predetermined amount of time. This prevents your UI code from needing to process every event and also drastically reduces the number of API calls sent to your server." //this is often used for autocomplete searches. it only checks if you've stopped typing for x amount of time.)
 
-Observables are an alternative to promises
+//rxjs & redux-observable notes
+-Observables are an alternative to promises
     >advantages:  stream of zero, one, or more values (promises are always 1); over any amount of time; CANCELLABLE;
+
+-"lodash for async"
+
+-you subscribe to observables (like .on in firebase???)
+
+-you can map, filter, reduce, concat, merge, debounce, throttle, combineLatest, etc on observables
+    >there's a built in delay operator
+    >switchMap implicitly cancels old queries when a new one happens
+
+*-they start talking about "Epics" in the context of using rxjs with redux
+    >redux-observable
+
+-they recommend using redux-observable for *complex async tasks over any amount of time*
+    >also recommend learning rxjs before redux-observable
+    >"reactive programming"
