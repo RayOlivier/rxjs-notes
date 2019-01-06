@@ -1,3 +1,8 @@
+////more general rxjs notes///////////
+
+-Stream: values/events that are emitted over time
+
+
 //////the following notes are from watching the Netflix RxJS+Redux+React talk///////
 //general notes about terms I didn't know
 (AJAX = Asynchronous JavaScript And XML, unrelated but didn't know this lol)
@@ -21,3 +26,4 @@
 -they recommend using redux-observable for *complex async tasks over any amount of time*
     >also recommend learning rxjs before redux-observable
     >"reactive programming"
+////////////////////////////////////////////////////////////////////////////////
